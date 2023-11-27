@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------CSS links---------------------------------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="hero">
+        <main class="container">
+            <div class="content">
+                <img src="assets/img/icon.jpg" alt="Icon" id="icon">
+                <div class="details-box">
+                    <h1 id="name"></h1>
+                    <h2 id="autor"></h2>
+                    <div class="volume-box">
+                        <i class="bx bx-volume-full" id="muted"></i>
+                        <input type="range" min="0" max="1" value="0.5" step="0.1" id="volume">
+                    </div><!--end volume box-->
+                </div><!--end details box-->
+                <div class="progress-box">
+                    <progress value="" max="" id="progress"></progress>
+                    <div class="duration-box">
+                        <h3 id="current-time"></h3>
+                        <h4 id="duration"></h4>
+                    </div><!--end duration box-->
+                </div><!--end progress box-->
+                <div class="buttons-box">
+                    <i class="bx bx-shuffle" id="random"></i>
+                    <div class="buttons">
+                        <button type="button" class="bx bx-skip-previous" id="previous"></button>
+                        <button type="button" class="bx bx-play" id="play"></button>
+                        <button type="button" class="bx bx-skip-next" id="next"></button>
+                    </div><!--end buttons-->
+                </div><!--end buttons box-->
+            </div><!--end content-->
+            <audio id="audio">
+                <source src="" type="audio/mp3">
+                Seu navegador não suporta elemento de áudio.
+            </audio>
+        </main><!--end container-->
+    </section><!--end hero-->   
+    <!--------------------------------JavaScript link---------------------------------->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
